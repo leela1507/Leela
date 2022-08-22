@@ -1,0 +1,9 @@
+---
+- name: Copy Example 
+  hosts: localhost
+  tasks:
+    - name: copying file with playbook
+      become: true 
+      copy:
+        src: /home/miracle/Desktop/Hello
+        dest: /home/miracle/Desktop/JS
